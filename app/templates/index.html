@@ -3,6 +3,7 @@
     {% block conteudo %}
     <h2>Helow {{nome}}</h2>
     <p>
+        <img class="imgquadrada" src="{{ url_for('static', filename='imagens/drone.jpg') }}">
         Profissão: {{dados.profissao}}<br/>
         Canal: {{dados.canal}}
     </p>
