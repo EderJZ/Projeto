@@ -6,14 +6,18 @@ from flask import render_template
 def index():
     return render_template('index.html')
 
-@app.route('/galeria')
-def galeria():
-    return render_template('galeria.html')
+@app.route('/author')
+def author():
+    return render_template('author.html')
 
-@app.route('/contato')
-def contato():
-    return render_template('contato.html')
+@app.route('/create')
+def create():
+    return render_template('create.html')
 
-@app.route('/sobre')
-def sobre():
-    return render_template('sobre.html')
+@app.route('/details')
+def details():
+    return render_template('details.html')
+
+@app.route('/explore')
+def explore():
+    return render_template('explore.html')
