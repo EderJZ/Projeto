@@ -1,5 +1,5 @@
 <!DOCTYPE html> <!-- Este aquivo contem os elementos comuns das paginas -->
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
 </head>
 <body>
-    <nav>
-        <a href="/index">Página inicial</a> | 
-        <a href="/contato">Contato</a>
-    </nav>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/galeria">Galeria</a>
+            <a href="/contato">Contato</a>
+            <a href="/sobre">Sobre a Empresa</a>
+        </nav>
+    </header>
 
     {% block conteudo %}
     {% endblock %}
 
-    <h6>Projeto</h6>
+    <footer>
+        <p>© 2024 Drone Company</p>
+    </footer>
 </body>
 </html>
