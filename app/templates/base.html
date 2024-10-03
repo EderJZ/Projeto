@@ -1,74 +1,16 @@
-<!DOCTYPE html> <!-- Este aquivo contem os elementos comuns das paginas -->
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+            <!-- Conteúdo dinâmico do Flask -->
+        {% block conteudo %}
+        {% endblock %}
 
-    <!--
-    {% extends 'base.html' %} Puxa a elementos comuns das paginas do aquivo base
-
-    {% block conteudo %}
-    -->
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Drone</title>
-    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}"> -->
-    <!-- Bootstrap e CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
-    <!--CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-liberty-market.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css')}}">
-    <link rel="stylesheet"href="{{ url_for('static', filename='https://unpkg.com/swiper@7/swiper-bundle.min.css')}}"/>
-</head>
-<body>
-    
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-          <span class="dot"></span>
-          <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-    
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png" alt="">
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="explore.html">Explore</a></li>
-                            <li><a href="details.html">Item Details</a></li>
-                            <li><a href="author.html">Author</a></li>
-                            <li><a href="create.html">Create Yours</a></li>
-                        </ul>   
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-      </header>
-
-    {% block conteudo %}
-    
-    {% endblock %}
-
-    <footer>
-        <p>© 2024 Drone Company</p>
-    </footer>
-</body>
+        <footer>
+            <p>© 2024 Drone Company</p>
+        </footer>
+        
+    </body>
 </html>
