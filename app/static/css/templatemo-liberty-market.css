@@ -728,7 +728,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../imagens/banner-bg.jpg);
+  background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -822,7 +822,7 @@ Categories & Collections Style
 }
 
 .categories-collections:after {
-  background-image: url(/assets/images/category-collection-dec.png);
+  background-image: url(../assets/images/category-collection-dec.png);
   width: 300px;
   height: 282px;
   position: absolute;
