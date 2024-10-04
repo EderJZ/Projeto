@@ -6,10 +6,6 @@ from flask import render_template
 def index():
     return render_template('index.html')
 
-@app.route('/author')
-def author():
-    return render_template('author.html')
-
 @app.route('/create')
 def create():
     return render_template('create.html')
